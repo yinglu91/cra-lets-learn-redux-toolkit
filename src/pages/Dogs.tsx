@@ -3,7 +3,15 @@ import { useFetchBreedsQuery } from "../services/dogsApiSlice"
 
 const Dogs = () => {
   const [numDogs, setNumDogs] = useState(10)
-  const { data = [], isFetching } = useFetchBreedsQuery(numDogs)
+  const { data = [], isFetching, isError } = useFetchBreedsQuery(numDogs)
+
+  if (isFetching) {
+    return <h3>Loading...</h3>
+  }
+
+  if (isError) {
+    return <h3>Oop! Something went wrong.</h3>
+  }
 
   return (
     <>
