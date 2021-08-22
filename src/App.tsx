@@ -4,6 +4,7 @@ import Counter from "./pages/Counter"
 import Dogs from "./pages/Dogs"
 import Users from "./pages/Users"
 import UserDetail from "./pages/UserDetail"
+import PokemonPage from "./pages/PokemonPage"
 import "./App.css"
 
 const App = () => {
@@ -27,6 +28,10 @@ const App = () => {
 
           <Route path='/users/:id'>
             <UserDetail />
+          </Route>
+
+          <Route path='/pokeman'>
+            <PokemonPage />
           </Route>
         </Switch>
       </Layout>

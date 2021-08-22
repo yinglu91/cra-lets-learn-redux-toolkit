@@ -21,6 +21,12 @@ const Navbar = () => {
             Counter
           </NavLink>
         </li>
+
+        <li>
+          <NavLink to='/pokeman' activeClassName='selected'>
+            Pokeman
+          </NavLink>
+        </li>
       </ul>
     </nav>
   )
