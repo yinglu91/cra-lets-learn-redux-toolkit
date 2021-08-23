@@ -27,6 +27,12 @@ const Navbar = () => {
             Pokeman
           </NavLink>
         </li>
+
+        <li>
+          <NavLink to='/kanyePage' activeClassName='selected'>
+            Kanye
+          </NavLink>
+        </li>
       </ul>
     </nav>
   )

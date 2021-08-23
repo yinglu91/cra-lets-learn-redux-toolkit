@@ -5,6 +5,8 @@ import Dogs from "./pages/Dogs"
 import Users from "./pages/Users"
 import UserDetail from "./pages/UserDetail"
 import PokemonPage from "./pages/PokemonPage"
+import KanyePage from "./pages/KanyePage"
+
 import "./App.css"
 
 const App = () => {
@@ -32,6 +34,10 @@ const App = () => {
 
           <Route path='/pokeman'>
             <PokemonPage />
+          </Route>
+
+          <Route path='/kanyePage'>
+            <KanyePage />
           </Route>
         </Switch>
       </Layout>

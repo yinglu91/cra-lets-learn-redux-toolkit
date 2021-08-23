@@ -3,6 +3,7 @@ import counterReducer from "../services/counterSlice"
 import { dogApiSlice } from "../services/dogsApiSlice"
 import { usersApiSlice } from "../services/usersApiSlice"
 import { pokemonApiSlice } from "../services/pokemonApiSlice"
+import { kanyeApiSlice } from "../services/kanyeApiSlice"
 
 export const store = configureStore({
   reducer: {
@@ -10,6 +11,7 @@ export const store = configureStore({
     [dogApiSlice.reducerPath]: dogApiSlice.reducer,
     [usersApiSlice.reducerPath]: usersApiSlice.reducer,
     [pokemonApiSlice.reducerPath]: pokemonApiSlice.reducer,
+    [kanyeApiSlice.reducerPath]: kanyeApiSlice.reducer,
   },
 
   middleware: (getDefaultMiddleware) => {
@@ -17,6 +19,7 @@ export const store = configureStore({
       .concat(dogApiSlice.middleware)
       .concat(usersApiSlice.middleware)
       .concat(pokemonApiSlice.middleware)
+      .concat(kanyeApiSlice.middleware)
   },
 })
 
